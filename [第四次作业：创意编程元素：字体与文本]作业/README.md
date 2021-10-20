@@ -1,3 +1,9 @@
+第四次：
+本次作业共三个程序代码，效果分别为：文本附着曲线、文本自由活动、文本绕点旋转。
+sketch_1:文本附着曲线
+sketch_2:文本自由活动
+sketch_3：文本绕点旋转
+
 sketch_1:
 程序运行效果为：文本体现在曲线上。
 重点： 
@@ -33,5 +39,6 @@ void draw() {
   text(message,0,0);
   theta += 0.01;                // increase rotation
 }
-![程序效果图](https://github.com/517YZY/Processing-Homework/blob/main/%E7%AC%AC%204%20%E5%91%A8/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-10-16%20194721.jpg)
+![效果展示](https://user-images.githubusercontent.com/90589652/138056927-d09e187d-83e9-4cfa-a0e4-f600ef88186d.jpg)
+
 
