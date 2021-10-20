@@ -15,4 +15,23 @@ void shake() { ； void home() {
 ![效果展示](https://user-images.githubusercontent.com/90589652/138054151-bc9fc88a-febf-49ee-9823-939033335e83.jpg)
 
 sketch_3:
+运用了rotate使输入的文本绕某点旋转：
+PFont f;      //declare
+String message = "How can I pray for time to go backs.";
+float theta;
+void setup() {
+  size(800, 800);
+  f = createFont("Arial",40,true);      //create Font
+}
+void draw() {
+  background(0);
+  fill(255);
+  textFont(f);                  // set the font
+  translate(width/2,height/2);  //translate to the center
+  rotate(theta);                // theta == radian 
+  textAlign(CENTER);
+  text(message,0,0);
+  theta += 0.01;                // increase rotation
+}
+![程序效果图](https://github.com/517YZY/Processing-Homework/blob/main/%E7%AC%AC%204%20%E5%91%A8/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202021-10-16%20194721.jpg)
 
