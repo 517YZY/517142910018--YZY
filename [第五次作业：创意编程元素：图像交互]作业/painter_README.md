@@ -2,7 +2,12 @@
 
 ![屏幕截图 2021-10-25 081647](https://user-images.githubusercontent.com/90589652/138618544-4a142107-62d2-4c39-87bd-6e45d81ed3a0.jpg)
 
+
+
 在绘画面板中，体现了颜色自选、画笔选择、eraser、画笔大小等功能。
+
+
+
 
 ![屏幕截图 2021-10-25 081951](https://user-images.githubusercontent.com/90589652/138618629-71a0e245-d880-4cdc-9dc8-cc1661d526fa.jpg)
 
