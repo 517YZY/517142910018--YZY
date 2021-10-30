@@ -3,3 +3,4 @@
 Particle类具有速度、加速度、生命周期life等概念，
 ParticleSystem类用于管理粒子的，可以添加多个粒子系统。其中包含着继承思想，可以通过一个系统管理不同的粒子。
 通过覆盖调整图层透明度得到消隐拖尾的效果。
+![export](https://user-images.githubusercontent.com/90589652/139524092-696a1c04-3556-4a14-ad39-225cc9153db9.gif)
