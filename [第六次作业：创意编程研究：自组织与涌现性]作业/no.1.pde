@@ -2,21 +2,29 @@ ArrayList<Particle> p1=new ArrayList();
 ArrayList<Particle> p2=new ArrayList();
 ArrayList<Particle> p3=new ArrayList();
 float alpha;
+import gifAnimation.*;
+GifMaker gifExport;
+
 
 void setup() {
   size(1200, 1200);
   background(0);
   noStroke();
-  for (int i = 0; i < 10000; i++) { //产生时分别在画面上中下三部分                      当然了，很简单的进行操作就可以分为更多层次和颜色的粒子
-    float x = random(width);
-    float y = random(height/3);
-    float r = map(x, 0, height, 86, 86);
-    int c = color(245,86,138);
-    Particle pp=new Particle(x,y,c);
-    p1.add(pp);
-  }
 
-for (int j = 0; j < 10000; j++) {   
+for (int i = 0; i < 10000; i++) { 
+  float x = random(width);
+  float y = random(height/3);
+  float r = map(x, 0, height, 86, 86);
+  int c = color(245,86,138);
+  Particle pp=new Particle(x,y,c);
+  p1.add(pp);
+ 
+  gifExport = new GifMaker(this,"export.gif");
+  gifExport.setRepeat(0); // = 永远循环
+  //gifExport.setDelay(1000/12); //动画 GIF 的速度
+}
+
+for (int j = 0; j < 10000; j++) {   //产生时分别在画面上中下三部分                   当然了，很简单的进行操作就可以分为更多层次和颜色的粒子
   float x = random(width);
   float y = random(height/3,2*height/3);
   float r = map(y, 0, height,232, 232);
@@ -25,7 +33,7 @@ for (int j = 0; j < 10000; j++) {
   p2.add(pp);
   }
   
-  for (int z = 0; z < 10000; z++) {   
+  for (int z = 0; z < 10000; z++) {  
   float x = random(width);
   float y = random(2*height/3,height);
   float r = map(y, 0, height,223, 223);
@@ -51,6 +59,12 @@ void draw() {
     pp.move();
   }
   updatePixels();
+  
+  if (frameCount%2==0 &&  frameCount<20) {
+  gifExport.setDelay(10);  //动画 GIF 的速度
+  gifExport.addFrame();
+  }
+  if (frameCount>20) gifExport.finish();
 }
 
 class Particle {
