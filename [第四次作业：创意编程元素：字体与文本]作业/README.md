@@ -49,4 +49,4 @@ location.add(velocity);
     if ((list[nextLocX1]== 1)||(list[nextLocX2]== 1)) {
      velocity.x *= -1;
 来将泡泡围绕限定范围动起来。
-![Uploading 2.gif…]()
+
