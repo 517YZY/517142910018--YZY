@@ -22,3 +22,5 @@ sketch_5:for
 sketch_6:if
 sketch_7:while
   认识： while while和for的区别 //for循环：今天做十套试卷 //while循环：今天做试卷直到出现100分为止。
+sketch_8:dist
+  认识： dist函数，用于判断距离。
