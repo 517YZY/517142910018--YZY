@@ -40,5 +40,11 @@ void draw() {
   theta += 0.01;                // increase rotation
 }
 ![效果展示](https://user-images.githubusercontent.com/90589652/138056927-d09e187d-83e9-4cfa-a0e4-f600ef88186d.jpg)
-
-
+sketch_4:
+利用程序将白色泡泡限定在黑框中，并且显示出动态的文字。利用：
+location.add(velocity);
+    int nextLocX1=int(location.y) * width + int(location.x + velocity.x);
+    int nextLocX2=int(location.y) * width + int(location.x - velocity.x);
+    if ((list[nextLocX1]== 1)||(list[nextLocX2]== 1)) {
+     velocity.x *= -1;
+来将泡泡围绕限定范围动起来。
