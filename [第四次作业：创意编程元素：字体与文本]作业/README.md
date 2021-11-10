@@ -32,6 +32,7 @@ void setup() {
 void draw() {
   background(0);
   fill(255);
+  
   textFont(f);                  // set the font
   translate(width/2,height/2);  //translate to the center
   rotate(theta);                // theta == radian 
@@ -48,3 +49,4 @@ location.add(velocity);
     if ((list[nextLocX1]== 1)||(list[nextLocX2]== 1)) {
      velocity.x *= -1;
 来将泡泡围绕限定范围动起来。
+
