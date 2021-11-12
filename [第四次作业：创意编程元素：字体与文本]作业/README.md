@@ -18,7 +18,8 @@ sketch_2:
 重点2：利用mousePressed，shake,home达到点击text会随机运动，不点击回复原位的效果 if (mousePressed) { letters[i].shake(); } else { letters[i].home();
 void shake() { ； void home() {
 重点3：利用class类，描述每一个独立的文字 class Letter { char letter; float homex,homey; float x,y;
-![效果展示](https://user-images.githubusercontent.com/90589652/138054151-bc9fc88a-febf-49ee-9823-939033335e83.jpg)
+
+![21](https://user-images.githubusercontent.com/90589652/141455678-d46e8d2e-9f32-4b8d-aacf-4fd49500fd60.gif)
 
 sketch_3:
 运用了rotate使输入的文本绕某点旋转：
@@ -40,7 +41,9 @@ void draw() {
   text(message,0,0);
   theta += 0.01;                // increase rotation
 }
-![效果展示](https://user-images.githubusercontent.com/90589652/138056927-d09e187d-83e9-4cfa-a0e4-f600ef88186d.jpg)
+
+![31](https://user-images.githubusercontent.com/90589652/141455710-dcdbf6c4-ebe6-422c-98e6-57d5b015d54c.gif)
+
 sketch_4:
 利用程序将白色泡泡限定在黑框中，并且显示出动态的文字。利用：
 location.add(velocity);
